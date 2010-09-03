@@ -1,6 +1,11 @@
 <?php
 
-// Name of the message buffer file. You have to create it manually with read and write permissons for the webserver.
+/**
+ * Simple chat example by Stephan Soller
+ * See http://arkanis.de/projects/simple-chat/
+ */
+
+// Name of the message buffer file. You have to create it manually with read and write permissions for the webserver.
 $messages_buffer_file = 'messages.json';
 // Number of most recent messages kept in the buffer
 $messages_buffer_size = 10;
@@ -40,7 +45,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Simple chat</title>
-	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
 	<script type="text/javascript">
 		// <![CDATA[
 		$(document).ready(function(){
@@ -155,7 +160,9 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 	</p>
 </form>
 
-<h2>Source</h2>
+<h2 id="source">Source</h2>
+
+<p>This is the source code if this file, including the PHP code:</p>
 
 <pre><? show_source(__FILE__); ?></pre>
 
