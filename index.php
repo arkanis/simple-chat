@@ -1,6 +1,6 @@
 <?php
 
-// Name of the message buffer file. You have to create it manually with read and write permissions for the webserver.
+// Name of the message buffer file. You have to create it manually with read and write permissons for the webserver.
 $messages_buffer_file = 'messages.json';
 // Number of most recent messages kept in the buffer
 $messages_buffer_size = 10;
@@ -41,7 +41,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 	<meta charset="utf-8">
 	<title>Simple chat - Arkanis Development</title>
 	<link href="/weblog.xml" rel="alternate" title="Arkanis Development weblog" type="application/atom+xml" />
-	<link href="/weblog/2010-09-02-mail-address-and-text-obfuscator.xml" rel="alternate" title="Comments newsfeed for Mail address and text obfuscator" type="application/atom+xml" />
+	<link href="/weblog/2010-09-04-a-simple-chat-in-about-50-lines-of-code.xml" rel="alternate" title="Comments newsfeed for a simple chat in about 50 lines of code" type="application/atom+xml" />
 	<link rel="stylesheet" type="text/css" href="/styles/blue-frame/style.css" />
 	<!--[if lte IE 8]><script src="/styles/modern-ambience/html5.js" type="text/javascript"></script><![endif]-->
 	<script src="jquery-1.4.2.min.js"></script>
@@ -171,6 +171,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 			<li><a href="#idea">The basic idea</a></li>
 			<li><a href="example.php#source">Some source code</a></li>
 			<li><a href="#download">Download</a></li>
+			<li><a href="#comments">Comments</a></li>
 			<li><a href="#license">License</a></li>
 		</ul>
 	</nav>
@@ -236,6 +237,13 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 	<p>It's the <a href="example.php">stripped down chat example</a> (<code>example.php</code>) as well as
 	jQuery (<code>jquery-1.4.2.min.js</code>) and a shell script to create an empty file that's writeable by everyone
 	(<code>setup.sh</code>, just in case…).</p>
+	
+	
+	<h3 id="comments">Comments</h3>
+	
+	<p>If you have questions about this chat or want to share some thoughts or ideas, please post a comment on the
+	<a href="http://arkanis.de/weblog/2010-09-04-a-simple-chat-in-about-50-lines-of-code">blog post of this project</a>.
+	You can also send me a mail if you prefere that.</p>
 	
 	
 	<h3 id="license">The MIT License</h3>
