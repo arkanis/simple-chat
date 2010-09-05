@@ -169,6 +169,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 			<li><a href="#demo">Demo</a></li>
 			<li><a href="example.php">Striped down example</a></li>
 			<li><a href="#idea">The basic idea</a></li>
+			<li><a href="/weblog/2010-09-05-simple-chat-the-details">The details</a></li>
 			<li><a href="example.php#source">Some source code</a></li>
 			<li><a href="#download">Download</a></li>
 			<li><a href="#comments">Comments</a></li>
@@ -228,6 +229,9 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 	bunch of lines you can drop into your project and modify or extend as needed. It's so simple that it shouldn't be a
 	problem to extend or adopt the code for your own purpose (e.g. multiple chat rooms, usage as message API, fancy
 	styling, etc.).</p>
+	
+	<p>If you want to know more take a look at the <a href="/weblog/2010-09-05-simple-chat-the-details">detailed
+	explanation of the design and implementation</a> of this chat.</p>
 	
 	
 	<h3 id="download">Download</h3>
