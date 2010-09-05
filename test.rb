@@ -1,8 +1,12 @@
 #!/usr/bin/ruby
+
+# A small script to put some load on the simple chat
+# By Stephan Soller
+
 require 'net/http'
 require 'thwait'
 
-num_clients = 200
+num_clients = 150
 
 def output_response(text, response)
 	if response.code.to_i == 200
@@ -12,8 +16,6 @@ def output_response(text, response)
 		puts response.body
 	end
 	$stdout.flush
-	#puts "#{text} => #{response.code}"
-	#puts response.body if response.code.to_i != 200
 end
 
 def simulate_client(name)
@@ -33,6 +35,7 @@ def simulate_client(name)
 	end
 end
 
+puts "Starting simulated clients… press ctrl+c to stop"
 tracker = ThreadsWait.new
 num_clients.times do |i|
 	client = Thread.new(i){|id| simulate_client "ruby#{id}"}
