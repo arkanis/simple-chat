@@ -44,7 +44,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Simple chat</title>
+	<title>Simple Chat</title>
 	<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
 	<script type="text/javascript">
 		// <![CDATA[
@@ -140,7 +140,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 </head>
 <body>
 
-<h1>Simple chat</h1>
+<h1>Simple Chat</h1>
 <p class="subtitle">With about 20 lines of PHP and about 40 lines of JavaScript</p>
 
 <ul id="messages">
@@ -159,6 +159,8 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 		<button type="submit">Send</button>
 	</p>
 </form>
+
+<p>Back to the <a href="./">project page</a>.</p>
 
 <h2 id="source">Source</h2>
 

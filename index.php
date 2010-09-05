@@ -39,7 +39,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Simple chat - Arkanis Development</title>
+	<title>Simple Chat - Arkanis Development</title>
 	<link href="/weblog.xml" rel="alternate" title="Arkanis Development weblog" type="application/atom+xml" />
 	<link href="/weblog/2010-09-04-a-simple-chat-in-about-50-lines-of-code.xml" rel="alternate" title="Comments newsfeed for a simple chat in about 50 lines of code" type="application/atom+xml" />
 	<link rel="stylesheet" type="text/css" href="/styles/blue-frame/style.css" />
@@ -153,14 +153,14 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 	<h1><a href="/">Arkanis Development</a></h1>
 	<ul>
 		<li><a href="/projects">Projects</a></li>
-		<li><a href="/projects/simple-chat/">Simple chat</a></li>
+		<li><a href="/projects/simple-chat/">Simple Chat</a></li>
 	</ul>
 </header>
 
 
 <section>
 	<header>
-		<h2>Simple chat</h2>
+		<h2>Simple Chat</h2>
 		<p>With about 20 lines of PHP and about 40 lines of JavaScript.</p>
 		<p>By Stephan Soller &lt;<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#115;&#116;&#101;p&#x68;&#x61;&#110;&#46;&#x73;&#111;l&#x6c;&#101;&#x72;&#x40;&#104;&#x65;&#108;&#x69;&#x6f;&#110;&#119;&#101;&#x62;&#46;&#100;&#x65;">&#115;&#116;&#101;p&#x68;&#x61;&#110;&#46;&#x73;&#111;l&#x6c;&#101;&#x72;&#x40;&#104;&#x65;&#108;&#x69;&#x6f;&#110;&#119;&#101;&#x62;&#46;&#100;&#x65;</a>&gt;, released under the <a href="#license">MIT-License</a>.</p>
 	</header>
