@@ -173,7 +173,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 			<li><a href="example.php#source">Some source code</a></li>
 			<li><a href="#download">Download</a></li>
 			<li><a href="#comments">Comments</a></li>
-			<li><a href="#license">License</a></li>
+			<li><a href="#changelog">Changelog</a></li>
 		</ul>
 	</nav>
 	
@@ -199,7 +199,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 		<li>loading…</li>
 	</ul>
 	
-	<form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+	<form action="<?= htmlentities($_SERVER['PHP_SELF'], ENT_COMPAT, 'UTF-8'); ?>" method="post">
 		<p>
 			<input type="text" name="content" id="content" />
 		</p>
@@ -236,7 +236,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 	
 	<h3 id="download">Download</h3>
 	
-	<p>This archive contains everything you need for this chat: <a href="simple-chat-v1.0.0.zip">simple-chat-v1.0.0.zip</a>.</p>
+	<p>This archive contains everything you need for this chat: <a href="simple-chat-v1.0.1.zip">simple-chat-v1.0.1.zip</a>.</p>
 	
 	<p>It's the <a href="example.php">stripped down chat example</a> (<code>example.php</code>) as well as
 	jQuery (<code>jquery-1.4.2.min.js</code>) and a shell script to create an empty file that's writeable by everyone
@@ -249,6 +249,15 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 	<a href="http://arkanis.de/weblog/2010-09-04-a-simple-chat-in-about-50-lines-of-code">blog post of this project</a>.
 	You can also send me a mail if you prefere that.</p>
 	
+	
+	<h3 id="changelog">Changelog</h3>
+	
+	<dl>
+		<dt>v1.0.1, 2010-08-08</dt>
+			<dd>Fixed an XSS security hole repored by Craig Francis (injecting HTML code into the <code>action</code> attribute of the form).</dd>
+		<dt>v1.0.0, 2010-08-04</dt>
+			<dd>Initial release.</dd>
+	</dl>
 	
 	<h3 id="license">The MIT License</h3>
 	

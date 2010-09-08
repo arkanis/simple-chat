@@ -147,7 +147,7 @@ if ( isset($_POST['content']) and isset($_POST['name']) )
 	<li>loading…</li>
 </ul>
 
-<form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+<form action="<?= htmlentities($_SERVER['PHP_SELF'], ENT_COMPAT, 'UTF-8'); ?>" method="post">
 	<p>
 		<input type="text" name="content" id="content" />
 	</p>
