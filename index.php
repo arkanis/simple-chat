@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Simple Chat v2.0.0 by Stephan Soller
+ * Simple Chat v2.0.1 by Stephan Soller
  * http://arkanis.de/projects/simple-chat/
  */
 
@@ -84,7 +84,13 @@ if ( isset($_POST["content"]) and isset($_POST["name"]) ) {
 	
 	// Poll-function that looks for new messages
 	async function poll_for_new_messages() {
-		const response = await fetch("messages.json")
+		// We want the browser to revalidate the cached messages.json file every time. That is it should send a
+		// conditional request with an If-Modified-Since header. This is the default behaviour in Firefox 115.
+		// In Chrome 114 it's not. It just uses the cached response without revalidation, thus missing new messages.
+		// Hence we explicitly tell fetch to revalidate via a conditional request. Because naming things is hard the
+		// option to do just that is { cache: "no-cache" }. See https://javascript.info/fetch-api#cache
+		// or https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching#force_revalidation
+		const response = await fetch("messages.json", { cache: "no-cache" })
 		
 		// Do nothing if messages.json wasn't found (doesn't exist yet probably)
 		if (!response.ok)
