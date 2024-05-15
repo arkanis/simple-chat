@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Simple Chat v2.0.1 by Stephan Soller
+ * Simple Chat v2.0.2 by Stephan Soller
  * http://arkanis.de/projects/simple-chat/
  */
 
@@ -50,8 +50,10 @@ if ( isset($_POST["content"]) and isset($_POST["name"]) ) {
 
 ?>
 <!DOCTYPE html>
-<title>Simple Chat</title>
+<meta charset=utf-8>
+<meta name=viewport content="initial-scale=1.0">
 <meta name=author content="Stephan Soller">
+<title>Simple Chat</title>
 <script type=module>
 	// Remove the "loading…" list entry
 	document.querySelector("ul#messages > li").remove()
